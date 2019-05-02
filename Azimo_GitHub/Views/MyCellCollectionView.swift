@@ -1,8 +1,8 @@
 //
-//  MyCellCollectionViewCell.swift
-//  daft code 3
+//  MyFlow.swift
+//  Azimo_GitHub
 //
-//  Created by Nikita Gura on 3/27/19.
+//  Created by Nikita Gura on 5/1/19.
 //  Copyright © 2019 Nikita Gura. All rights reserved.
 //
 
@@ -20,7 +20,7 @@ class MyCellCollectionView: UICollectionViewCell {
     }()
     override init(frame: CGRect) {
         super.init(frame: frame)
-     
+        layer.cornerRadius = 8.0
         addSubview(label)
     }
     

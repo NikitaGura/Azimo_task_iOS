@@ -1,8 +1,8 @@
 //
-//  LayouAtributtes.swift
-//  daft code 3
+//  MyFlow.swift
+//  Azimo_GitHub
 //
-//  Created by Nikita Gura on 3/29/19.
+//  Created by Nikita Gura on 5/1/19.
 //  Copyright © 2019 Nikita Gura. All rights reserved.
 //
 

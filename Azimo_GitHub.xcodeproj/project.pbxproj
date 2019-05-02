@@ -1,0 +1,624 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		21B279E422783CFD0037A932 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B279E322783CFD0037A932 /* AppDelegate.swift */; };
+		21B279E622783CFD0037A932 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B279E522783CFD0037A932 /* FirstViewController.swift */; };
+		21B279EB22783CFE0037A932 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21B279EA22783CFE0037A932 /* Assets.xcassets */; };
+		21B279F922783CFE0037A932 /* Azimo_GitHubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B279F822783CFE0037A932 /* Azimo_GitHubTests.swift */; };
+		21B27A0422783CFE0037A932 /* Azimo_GitHubUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B27A0322783CFE0037A932 /* Azimo_GitHubUITests.swift */; };
+		21B27A17227850140037A932 /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B27A16227850140037A932 /* Repo.swift */; };
+		21B27A1B22798A660037A932 /* RepoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B27A1A22798A660037A932 /* RepoCollectionViewController.swift */; };
+		21B27A1E22798B3D0037A932 /* MyFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B27A1D22798B3D0037A932 /* MyFlowLayout.swift */; };
+		21B27A2022798B610037A932 /* MyCellCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B27A1F22798B610037A932 /* MyCellCollectionView.swift */; };
+		21B27A2222798B6A0037A932 /* LayouAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B27A2122798B6A0037A932 /* LayouAttributes.swift */; };
+		21B27A242279CDC30037A932 /* RepoDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B27A232279CDC30037A932 /* RepoDataViewController.swift */; };
+		21B27A27227AF2B10037A932 /* NetworkProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B27A26227AF2B10037A932 /* NetworkProcessor.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		21B279F522783CFE0037A932 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 21B279D822783CFD0037A932 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 21B279DF22783CFD0037A932;
+			remoteInfo = Azimo_GitHub;
+		};
+		21B27A0022783CFE0037A932 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 21B279D822783CFD0037A932 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 21B279DF22783CFD0037A932;
+			remoteInfo = Azimo_GitHub;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		21B279E022783CFD0037A932 /* Azimo_GitHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Azimo_GitHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		21B279E322783CFD0037A932 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		21B279E522783CFD0037A932 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		21B279EA22783CFE0037A932 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		21B279EF22783CFE0037A932 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21B279F422783CFE0037A932 /* Azimo_GitHubTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Azimo_GitHubTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		21B279F822783CFE0037A932 /* Azimo_GitHubTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Azimo_GitHubTests.swift; sourceTree = "<group>"; };
+		21B279FA22783CFE0037A932 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21B279FF22783CFE0037A932 /* Azimo_GitHubUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Azimo_GitHubUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		21B27A0322783CFE0037A932 /* Azimo_GitHubUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Azimo_GitHubUITests.swift; sourceTree = "<group>"; };
+		21B27A0522783CFE0037A932 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21B27A16227850140037A932 /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
+		21B27A1A22798A660037A932 /* RepoCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoCollectionViewController.swift; sourceTree = "<group>"; };
+		21B27A1D22798B3D0037A932 /* MyFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFlowLayout.swift; sourceTree = "<group>"; };
+		21B27A1F22798B610037A932 /* MyCellCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCellCollectionView.swift; sourceTree = "<group>"; };
+		21B27A2122798B6A0037A932 /* LayouAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayouAttributes.swift; sourceTree = "<group>"; };
+		21B27A232279CDC30037A932 /* RepoDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoDataViewController.swift; sourceTree = "<group>"; };
+		21B27A26227AF2B10037A932 /* NetworkProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProcessor.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		21B279DD22783CFD0037A932 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21B279F122783CFE0037A932 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21B279FC22783CFE0037A932 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		21B279D722783CFD0037A932 = {
+			isa = PBXGroup;
+			children = (
+				21B279E222783CFD0037A932 /* Azimo_GitHub */,
+				21B279F722783CFE0037A932 /* Azimo_GitHubTests */,
+				21B27A0222783CFE0037A932 /* Azimo_GitHubUITests */,
+				21B279E122783CFD0037A932 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		21B279E122783CFD0037A932 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				21B279E022783CFD0037A932 /* Azimo_GitHub.app */,
+				21B279F422783CFE0037A932 /* Azimo_GitHubTests.xctest */,
+				21B279FF22783CFE0037A932 /* Azimo_GitHubUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		21B279E222783CFD0037A932 /* Azimo_GitHub */ = {
+			isa = PBXGroup;
+			children = (
+				21B27A25227AF27C0037A932 /* Service */,
+				21B27A1C22798B100037A932 /* Views */,
+				21B27A15227850040037A932 /* Models */,
+				21B27A11227841800037A932 /* Controllers  */,
+				21B279E322783CFD0037A932 /* AppDelegate.swift */,
+				21B279EA22783CFE0037A932 /* Assets.xcassets */,
+				21B279EF22783CFE0037A932 /* Info.plist */,
+			);
+			path = Azimo_GitHub;
+			sourceTree = "<group>";
+		};
+		21B279F722783CFE0037A932 /* Azimo_GitHubTests */ = {
+			isa = PBXGroup;
+			children = (
+				21B279F822783CFE0037A932 /* Azimo_GitHubTests.swift */,
+				21B279FA22783CFE0037A932 /* Info.plist */,
+			);
+			path = Azimo_GitHubTests;
+			sourceTree = "<group>";
+		};
+		21B27A0222783CFE0037A932 /* Azimo_GitHubUITests */ = {
+			isa = PBXGroup;
+			children = (
+				21B27A0322783CFE0037A932 /* Azimo_GitHubUITests.swift */,
+				21B27A0522783CFE0037A932 /* Info.plist */,
+			);
+			path = Azimo_GitHubUITests;
+			sourceTree = "<group>";
+		};
+		21B27A11227841800037A932 /* Controllers  */ = {
+			isa = PBXGroup;
+			children = (
+				21B279E522783CFD0037A932 /* FirstViewController.swift */,
+				21B27A1A22798A660037A932 /* RepoCollectionViewController.swift */,
+				21B27A232279CDC30037A932 /* RepoDataViewController.swift */,
+			);
+			path = "Controllers ";
+			sourceTree = "<group>";
+		};
+		21B27A15227850040037A932 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				21B27A16227850140037A932 /* Repo.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		21B27A1C22798B100037A932 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				21B27A2122798B6A0037A932 /* LayouAttributes.swift */,
+				21B27A1F22798B610037A932 /* MyCellCollectionView.swift */,
+				21B27A1D22798B3D0037A932 /* MyFlowLayout.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		21B27A25227AF27C0037A932 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				21B27A26227AF2B10037A932 /* NetworkProcessor.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		21B279DF22783CFD0037A932 /* Azimo_GitHub */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21B27A0822783CFE0037A932 /* Build configuration list for PBXNativeTarget "Azimo_GitHub" */;
+			buildPhases = (
+				21B279DC22783CFD0037A932 /* Sources */,
+				21B279DD22783CFD0037A932 /* Frameworks */,
+				21B279DE22783CFD0037A932 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Azimo_GitHub;
+			productName = Azimo_GitHub;
+			productReference = 21B279E022783CFD0037A932 /* Azimo_GitHub.app */;
+			productType = "com.apple.product-type.application";
+		};
+		21B279F322783CFE0037A932 /* Azimo_GitHubTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21B27A0B22783CFE0037A932 /* Build configuration list for PBXNativeTarget "Azimo_GitHubTests" */;
+			buildPhases = (
+				21B279F022783CFE0037A932 /* Sources */,
+				21B279F122783CFE0037A932 /* Frameworks */,
+				21B279F222783CFE0037A932 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				21B279F622783CFE0037A932 /* PBXTargetDependency */,
+			);
+			name = Azimo_GitHubTests;
+			productName = Azimo_GitHubTests;
+			productReference = 21B279F422783CFE0037A932 /* Azimo_GitHubTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		21B279FE22783CFE0037A932 /* Azimo_GitHubUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21B27A0E22783CFE0037A932 /* Build configuration list for PBXNativeTarget "Azimo_GitHubUITests" */;
+			buildPhases = (
+				21B279FB22783CFE0037A932 /* Sources */,
+				21B279FC22783CFE0037A932 /* Frameworks */,
+				21B279FD22783CFE0037A932 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				21B27A0122783CFE0037A932 /* PBXTargetDependency */,
+			);
+			name = Azimo_GitHubUITests;
+			productName = Azimo_GitHubUITests;
+			productReference = 21B279FF22783CFE0037A932 /* Azimo_GitHubUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		21B279D822783CFD0037A932 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Nikita Gura";
+				TargetAttributes = {
+					21B279DF22783CFD0037A932 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					21B279F322783CFE0037A932 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 21B279DF22783CFD0037A932;
+					};
+					21B279FE22783CFE0037A932 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 21B279DF22783CFD0037A932;
+					};
+				};
+			};
+			buildConfigurationList = 21B279DB22783CFD0037A932 /* Build configuration list for PBXProject "Azimo_GitHub" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 21B279D722783CFD0037A932;
+			productRefGroup = 21B279E122783CFD0037A932 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				21B279DF22783CFD0037A932 /* Azimo_GitHub */,
+				21B279F322783CFE0037A932 /* Azimo_GitHubTests */,
+				21B279FE22783CFE0037A932 /* Azimo_GitHubUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		21B279DE22783CFD0037A932 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21B279EB22783CFE0037A932 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21B279F222783CFE0037A932 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21B279FD22783CFE0037A932 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		21B279DC22783CFD0037A932 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21B27A27227AF2B10037A932 /* NetworkProcessor.swift in Sources */,
+				21B27A2222798B6A0037A932 /* LayouAttributes.swift in Sources */,
+				21B27A2022798B610037A932 /* MyCellCollectionView.swift in Sources */,
+				21B27A17227850140037A932 /* Repo.swift in Sources */,
+				21B279E622783CFD0037A932 /* FirstViewController.swift in Sources */,
+				21B27A1B22798A660037A932 /* RepoCollectionViewController.swift in Sources */,
+				21B27A1E22798B3D0037A932 /* MyFlowLayout.swift in Sources */,
+				21B27A242279CDC30037A932 /* RepoDataViewController.swift in Sources */,
+				21B279E422783CFD0037A932 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21B279F022783CFE0037A932 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21B279F922783CFE0037A932 /* Azimo_GitHubTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21B279FB22783CFE0037A932 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21B27A0422783CFE0037A932 /* Azimo_GitHubUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		21B279F622783CFE0037A932 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 21B279DF22783CFD0037A932 /* Azimo_GitHub */;
+			targetProxy = 21B279F522783CFE0037A932 /* PBXContainerItemProxy */;
+		};
+		21B27A0122783CFE0037A932 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 21B279DF22783CFD0037A932 /* Azimo_GitHub */;
+			targetProxy = 21B27A0022783CFE0037A932 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		21B27A0622783CFE0037A932 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		21B27A0722783CFE0037A932 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		21B27A0922783CFE0037A932 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T29HC5ZR57;
+				INFOPLIST_FILE = Azimo_GitHub/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.localgangstar.Azimo-GitHub";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		21B27A0A22783CFE0037A932 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T29HC5ZR57;
+				INFOPLIST_FILE = Azimo_GitHub/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.localgangstar.Azimo-GitHub";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		21B27A0C22783CFE0037A932 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T29HC5ZR57;
+				INFOPLIST_FILE = Azimo_GitHubTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.localgangstar.Azimo-GitHubTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Azimo_GitHub.app/Azimo_GitHub";
+			};
+			name = Debug;
+		};
+		21B27A0D22783CFE0037A932 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T29HC5ZR57;
+				INFOPLIST_FILE = Azimo_GitHubTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.localgangstar.Azimo-GitHubTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Azimo_GitHub.app/Azimo_GitHub";
+			};
+			name = Release;
+		};
+		21B27A0F22783CFE0037A932 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T29HC5ZR57;
+				INFOPLIST_FILE = Azimo_GitHubUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.localgangstar.Azimo-GitHubUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Azimo_GitHub;
+			};
+			name = Debug;
+		};
+		21B27A1022783CFE0037A932 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T29HC5ZR57;
+				INFOPLIST_FILE = Azimo_GitHubUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.localgangstar.Azimo-GitHubUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Azimo_GitHub;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		21B279DB22783CFD0037A932 /* Build configuration list for PBXProject "Azimo_GitHub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21B27A0622783CFE0037A932 /* Debug */,
+				21B27A0722783CFE0037A932 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21B27A0822783CFE0037A932 /* Build configuration list for PBXNativeTarget "Azimo_GitHub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21B27A0922783CFE0037A932 /* Debug */,
+				21B27A0A22783CFE0037A932 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21B27A0B22783CFE0037A932 /* Build configuration list for PBXNativeTarget "Azimo_GitHubTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21B27A0C22783CFE0037A932 /* Debug */,
+				21B27A0D22783CFE0037A932 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21B27A0E22783CFE0037A932 /* Build configuration list for PBXNativeTarget "Azimo_GitHubUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21B27A0F22783CFE0037A932 /* Debug */,
+				21B27A1022783CFE0037A932 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 21B279D822783CFD0037A932 /* Project object */;
+}
